@@ -11,8 +11,11 @@ VIDIMU-TOOLS is a code repository related to the public dataset "VIDIMU. Multimo
 ## Dependencies
 The processing of raw data in the VIDIMU dataset was done using the scripts included in this repository, in combination with free tools [NVIDIA Maxine SDK](https://developer.nvidia.com/maxine) BodyTrack (v0.8)  and [OpenSim](https://opensim.stanford.edu) (v4.4).
 
-## Repository files description
 
+## First steps
+- Download the VIDIMU dataset to a folder in your local machine.
+- In the desired Jupyter notebook included in VIDIMU-TOOLS, set the `fulldatasetpath` variable to the path of the previosu folder.
+## Repository files description
 The code is organized in the following folder hierarchy:
 - **imus** folder includes the following Jupyter notebooks: 
   - `PlotImusRawQuats.ipynb`: generates _.svg_ plots of the raw quaternion data acquired with custom IMU sensors and stored as _.raw_ files in the VIDIMU dataset.
