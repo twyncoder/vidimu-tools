@@ -23,7 +23,7 @@ The code is organized in the following folder hierarchy:
   - `PlotVideoEstimatedJointAngles.ipynb`: generate plots the joint angles estimated from 3D joint positions inferred by [NVIDIA Maxine SDK](https://developer.nvidia.com/maxine) BodyTrack by reading _.csv_ files.
   - `RecodeMP4toSmallsizefiles.ipynb`: recodes original acquired and [NVIDIA Maxine SDK](https://developer.nvidia.com/maxine) BodyTrack generated _.mp4_ video files to significantly reduce their size and stores them in a different folder.
 - **synchronize** folder includes the following Jupyter notebooks:
-   - `EstimateFileSynchronization.ipynb`: computes ideal synchronization of IMU and video data records by estimating RMSE of shifted joint angles signals (.mot and .csv), and writes this info to a file `infoToSync.csv`.
+   - `EstimateFileSynchronization.ipynb`: computes ideal synchronization of IMU and video data records by estimating RMSE of shifted joint angles signals (_.mot_ and _.csv_ files), and writes this info to a file `infoToSync.csv`.
    - `ModifyFilesToSync.ipynb`: modify VIDIMU dataset files for estimated ideal synchronization according to `infoToSync.csv`.
 - **utils** folder includes auxiliary Python functions employed in the Jupyter notebooks commented above.
 
