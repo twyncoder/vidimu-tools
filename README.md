@@ -14,7 +14,7 @@ The processing of raw data in the VIDIMU dataset was done using the scripts incl
 
 ## First steps
 - Download the VIDIMU dataset to a folder in your local machine.
-- In the desired Jupyter notebook included in VIDIMU-TOOLS, set the `fulldatasetpath` variable to the path of the previosu folder.
+- In the desired Jupyter notebook included in VIDIMU-TOOLS, set the `fulldatasetpath` variable to the path of the previous folder.
 ## Repository files description
 The code is organized in the following folder hierarchy:
 - **imus** folder includes the following Jupyter notebooks: 
