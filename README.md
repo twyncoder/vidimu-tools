@@ -32,7 +32,9 @@ The code is organized in the following folder hierarchy:
 
 ## Reference
 
-When using this code, please include a reference to this GitHub repository and the associated scientific paper.
+When using this code, please include a reference to this GitHub repository and the associated scientific paper:
+
+[Martínez-Zarzuela, M., González-Alonso, J., Antón-Rodríguez, M., Díaz-Pernas, F. J., Müller, H., & Simón-Martínez, C. (2023). VIDIMU. Multimodal video and IMU kinematic dataset on daily life activities using affordable devices. arXiv preprint arXiv:2303.16150.] (https://arxiv.org/abs/2303.16150)
 
 ## License
 
