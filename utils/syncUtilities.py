@@ -345,8 +345,8 @@ def plotFramesShiftToSyncrhonizeAllSubjectsOneActivity(csvlog,inpath,outpath,sub
     plt.suptitle(title,fontsize=18, verticalalignment='top',y=1.0)
     plt.tight_layout(pad=1.0, h_pad=1.0, w_pad=1.0)
     if outputfilename:
-        #MUST BE DONE BEFORE SHOW
-        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg',dpi=300)
-        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),format='png')
+        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg')
+        plt.savefig(os.path.join(outpath,outputfilename+'.pdf'),format='pdf')
+        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),format='png',dpi=600)
     plt.show()
     return rmse_list

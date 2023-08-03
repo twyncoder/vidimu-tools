@@ -109,8 +109,9 @@ def plotVideoPoseAllSubjectsOneActivity(inpath,outpath,subjects,activity,activit
     if outputfilename:
         if not os.path.exists(outpath):
             os.makedirs(outpath)
-        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg',dpi=600)
-        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),format='png')
+        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg')
+        plt.savefig(os.path.join(outpath,outputfilename+'.pdf'),format='pdf')
+        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),format='png',dpi=600)
     
     plt.show()
 
@@ -161,8 +162,9 @@ def plotRawQuaternionsPerActivity(inpath,outpath,subjects,activity,activity_lege
     if outputfilename:
         if not os.path.exists(outpath):
             os.makedirs(outpath)
-        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg',dpi=600)
-        #plt.savefig(os.path.join(outpath,outputfilename+'.png'))
+        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg')
+        plt.savefig(os.path.join(outpath,outputfilename+'.pdf'),format='pdf')
+        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),dpi=600))
     plt.show()
 
 #IMUS MOT
@@ -230,8 +232,10 @@ def plotMotJointAnglesPerActivity(inpath,outpath,subjects,activity,activity_lege
     if outputfilename:
         if not os.path.exists(outpath):
             os.makedirs(outpath)
-        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg',dpi=600)
-        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),format='png')
+        plt.savefig(os.path.join(outpath,outputfilename+'.svg'),format='svg')
+        plt.savefig(os.path.join(outpath,outputfilename+'.pdf'),format='pdf')
+        #plt.savefig(os.path.join(outpath,outputfilename+'.png'),format='png',dpi=600))
+
     plt.show()
     
 # OTHER UTILITIES (SYNC)
@@ -245,5 +249,6 @@ def plot_both(jointangle_imus,jointangle_video,title=None,outputfile=None):
     if title:
         plt.suptitle(title)
     if outputfile:
-        plt.savefig(os.path.join(outputfile+'.svg'),format='svg',dpi=600)
+        plt.savefig(os.path.join(outputfile+'.svg'),format='svg')
+        plt.savefig(os.path.join(outputfile+'.pdf'),format='pdf')
     plt.show()
